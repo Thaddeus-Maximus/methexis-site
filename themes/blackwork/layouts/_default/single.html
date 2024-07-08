@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ if .Params.rawhtml }}
+	{{.Content}}
+{{ else }}
+  <div class="singlecolumn">
+                {{ $alt := printf "%s - %s" .Title .Summary}}
+                <a href="{{ .RelPermalink }}">
+                {{ with resources.Get (.Params.image) }}
+                  {{ if eq .MediaType.SubType "svg"}}
+                    <img src="{{.Permalink}}" alt="{{$alt}}">
+                  {{ else }}
+                    {{ with .Resize "webp 1080x q40" }}
+                      <img src="{{.Permalink}}" alt="{{$alt}}">
+                    {{ end }}
+                  {{ end }}
+                </a>
+                {{ end }}
+                <div class="eventCaption">
+                    <a href="{{ .RelPermalink }}"><h2> {{.Title}}</h2></a>
+                    {{ if .Date }}
+
+                        <h3> {{.Date.Format "January 02, 2006 @ 3:04PM"}}</h3>
+                        {{end}}
+                    <p>{{.Content}}</p>
+                </div>
+              </div>
+{{end}}             
+{{ end }}

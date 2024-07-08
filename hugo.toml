@@ -1,0 +1,29 @@
+baseURL = 'https://blonocatholic.com/'
+languageCode = 'en-us'
+title = 'BloNo Young Catholics'
+theme = 'blackwork'
+
+publishDir = 'newsite'
+
+buildFuture = true
+
+[markup]
+  [markup.asciidocExt]
+    safeMode = 'unsafe'
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+
+
+[_build]
+  publishResources = false
+
+
+[params]
+  header = "constellation_exp.svg"
+  header_href = "/"
+  bar = "bar.svg"
+  navbar_pages = ["calendar", "groups", "about", "resources"]
+  footer_logo = "logo.png"

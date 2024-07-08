@@ -1,0 +1,31 @@
+<!-- this is the header -->
+
+<a class="header" href="{{$.Site.Params.header_href }}">{{ with resources.Get ($.Site.Params.header) }}
+  {{ if eq .MediaType.SubType "svg"}}
+    <img src="{{.Permalink}}">
+  {{ else }}
+    {{ with .Resize "webp 1600x q40" }}
+      <img src="{{.Permalink}}">
+    {{ end }}
+  {{ end }}
+{{ end }}</a>
+<div class="navbar">
+  {{ range $.Site.Params.navbar_pages }}
+    {{ with $.Site.GetPage . }}
+    <!-- look, you should be able to do (where .Site.Pages "File.Dir" "content/events").ByDate but it isn't working. phooey. -->
+    <!-- publish only events, which are no more than 3 days old -->
+      <div class="navlink {{if eq .RelPermalink $.RelPermalink}} depressed {{end}}"><a href="{{.RelPermalink}}">{{ .Title }}</a></div>
+    {{ end }}
+  {{ end }}
+</div>
+<div class="bar">
+        {{ with resources.Get ($.Site.Params.bar) }}
+          {{ if eq .MediaType.SubType "svg"}}
+            <img src="{{.Permalink}}">
+          {{ else }}
+            {{ with .Resize "webp 1600x q40" }}
+              <img src="{{.Permalink}}">
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
