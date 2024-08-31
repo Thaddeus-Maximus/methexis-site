@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'BloNo Young Catholics'
 theme = 'blackwork'
 
-publishDir = 'newsite'
+publishDir = 'docs'
 
 buildFuture = true
 
