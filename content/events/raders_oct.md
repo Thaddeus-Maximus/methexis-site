@@ -5,4 +5,4 @@ date: 2024-10-12T14:00:00-0600
 draft: false
 ---
 
-Join us for an outing at Rader Family Farms from 2-4:30, followed by mass at Historic St. Pat's at 5, and dinner out afterwards.
+Join us for an outing at Rader Family Farms. We'll have mass at Historic St. Pat's at 5PM, and then head over to Rader's at 6:30PM!
