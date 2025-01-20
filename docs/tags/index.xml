@@ -4,7 +4,8 @@
     <title>Tags on BloNo Young Catholics</title>
     <link>https://blonocatholic.com/tags/</link>
     <description>Recent content in Tags on BloNo Young Catholics</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://blonocatholic.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://blonocatholic.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
