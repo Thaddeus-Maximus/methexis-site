@@ -1,43 +1,4 @@
 {{ define "main" }}
+    <div>&nbsp;</div>
     <div class="singlecolumn"> {{ .Content }} </div>
-    {{ range .Pages.ByParam "order" }}
-        <!-- look, you should be able to do (where .Site.Pages "File.Dir" "content/events").ByDate but it isn't working. phooey. -->
-        <!-- publish only events, which are no more than 3 days old -->
-
-
-            <div class="eventCard">
-                {{ $alt := printf "%s - %s" .Title .Summary}}
-                <a href="{{ .RelPermalink }}">
-                {{ with resources.Get (.Params.image) }}
-                  {{ if eq .MediaType.SubType "svg"}}
-                    <img src="{{.Permalink}}" alt="{{$alt}}">
-                  {{ else }}
-                    {{ with .Resize "webp 1080x q40" }}
-                      <img src="{{.Permalink}}" alt="{{$alt}}">
-                    {{ end }}
-                  {{ end }}
-                </a>
-                {{ end }}
-                <div class="eventCaption">
-                    <a href="{{ .RelPermalink }}"><h2> {{.Title}}</h2></a>
-                    {{ if .Date }}
-
-                        <h3> {{.Date.Format "January 02, 2006 @ 3:04PM"}}</h3>
-                        {{end}}
-                        {{ .Content }}
-                </div>
-            </div>
-            
-            <!--<div class="bar">
-                {{ with resources.Get ($.Site.Params.bar) }}
-                  {{ if eq .MediaType.SubType "svg"}}
-                    <img src="{{.Permalink}}">
-                  {{ else }}
-                    {{ with .Resize "webp 1600x q40" }}
-                      <img src="{{.Permalink}}">
-                    {{ end }}
-                  {{ end }}
-                {{ end }}
-            </div>-->
-    {{ end }}
 {{ end }}

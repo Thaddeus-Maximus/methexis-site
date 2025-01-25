@@ -2,10 +2,16 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-{{- with resources.Get "css/flickity.css" }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}" media="screen">
-{{- end }}
+<link href="https://fonts.googleapis.com/css2?family=Girassol" rel="stylesheet">
+
+<style>
+  body {
+    {{ with resources.Get $.Site.Params.background }}
+      background-image: url("{{.Permalink}}");
+      background-repeat: repeat;
+    {{ end }}
+  }
+</style>
 {{- with resources.Get "css/main.css" }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
@@ -35,5 +41,5 @@
 {{ if isset .Params "redirect_url" }}
   <meta http-equiv="refresh" content="0; url={{ .Params.redirect_url }}">
 {{ end }}
-<title>BNC - {{ .Title }}</title>
+<title>{{ .Title }}</title>
 </head>

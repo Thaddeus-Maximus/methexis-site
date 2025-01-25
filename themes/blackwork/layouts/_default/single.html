@@ -1,28 +1,27 @@
 {{ define "main" }}
-{{ if .Params.rawhtml }}
-	{{.Content}}
-{{ else }}
-  <div class="singlecolumn">
-                {{ $alt := printf "%s - %s" .Title .Summary}}
-                <a href="{{ .RelPermalink }}">
-                {{ with resources.Get (.Params.image) }}
-                  {{ if eq .MediaType.SubType "svg"}}
-                    <img src="{{.Permalink}}" alt="{{$alt}}">
-                  {{ else }}
-                    {{ with .Resize "webp 1080x q40" }}
-                      <img src="{{.Permalink}}" alt="{{$alt}}">
-                    {{ end }}
-                  {{ end }}
-                </a>
+  <div>&nbsp;</div>
+  {{ if $.Params.sidebar }}
+	  <div class="singlecolumn"> {{ .Content }}
+		  {{ range $.Params.sidebar }}
+		  	<div class="card">
+          {{ if .href }}
+            <div class="photo-card clickable" onclick="window.location='{{.href}}'">
+          {{ else }}
+            <div class="photo-card">
+          {{ end }}
+            <div class="photo-inner">
+              {{ $resizeq := (.resize | default "webp 1000x q60")}}
+              {{ with resources.Get .img }}
+                {{ with .Resize $resizeq }}
+                  <img src="{{.Permalink}}">
                 {{ end }}
-                <div class="eventCaption">
-                    <a href="{{ .RelPermalink }}"><h2> {{.Title}}</h2></a>
-                    {{ if .Date }}
-
-                        <h3> {{.Date.Format "January 02, 2006 @ 3:04PM"}}</h3>
-                        {{end}}
-                    <p>{{.Content}}</p>
-                </div>
-              </div>
-{{end}}             
+              {{ end }}
+            </div>
+          </div>
+        </div>
+		  {{ end }}
+		</div>
+	{{ else }}
+	  <div class="singlecolumn"> {{ .Content }} </div>
+	{{ end }}
 {{ end }}

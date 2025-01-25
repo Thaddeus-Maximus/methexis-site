@@ -1,32 +1,40 @@
 * {
-    font-family: "Inknut Antiqua";
-    text-align: center;
+  font-family: "Gentium Book Plus";
+  text-align: center;
   box-sizing: border-box;
   margin: 0;  padding: 0;
 }
 
 body {
-  background: #173751;
-  color: #e6e6e6;
+  background-color: #f99b4e;
+  color: #1a1a1ae6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Almendra";
+    font-family: "Girassol";
     font-weight: bold;
 }
+h1 {
+  font-size: 3rem;
+}
 h2 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
 }
 h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 p {
-    font-family: "Almendra";
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5;
-    text-align: center;
+    text-align: justify;
+    text-align-last: center;
     margin: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+strong {
+  color: #7c0113e6;
 }
 
 ul {
@@ -58,11 +66,37 @@ blockquote {
 }
 
 .singlecolumn {
-  max-width: 60rem;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   text-align: center;
+
+  column-count: 2;
+}
+
+.firstcolumn {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: right;
+
+  padding: 1rem;
+
+  display: inline-block;
+  vertical-align: top;
+}
+.secondcolumn {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  text-align: left;
+  padding: 1rem;
+
+  display: inline-block;
+  vertical-align: top;
 }
 
 .wrapper {
@@ -82,37 +116,9 @@ blockquote {
     max-width: 95%;
   margin: 0;  padding: 0;
 }
-.bar img {
-    width: 1200px;
-    max-width: 90%;
-  margin: 0;  padding: 0;
-    height: auto;
-}
-.bar {
-    margin: 0; padding: 0;
-    height: auto;
-}
-
-.eventCard img {
-    width: 720px;
-    max-width: 95%;
-    border: 0.5rem solid #161b1f;
-  margin: 0;  padding: 0;
-}
-
-.eventCard {
-    margin: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-
-  display: inline-block;
-  vertical-align: top;
-}
-
-
 
 a {
-    color: #dfb920;
+    color: #7c0113e6;
     text-decoration: none;
   margin: 0;  padding: 0;
 }
@@ -146,16 +152,29 @@ a {
 }
 
 .header img {
-  max-height: 50vh;
+  max-height: 80vh;
+}
+
+.navbar img {
+  height: 2rem;
 }
 
 .navlink {
-    font-family: "Almendra";
-    font-size: 2rem;
-    width: 20%;
-    min-width: 10rem;
+    font-family: "Girassol";
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 white-space:nowrap;
   display: inline-block;
+}
+
+.navlink.depressed a {
+  color: #7c0113e6;
+}
+
+.navlink a{
+    font-family: "Girassol";
+    color: #0b0b0be6;
 }
 
 .footer_logo img{
@@ -163,38 +182,13 @@ white-space:nowrap;
   width: 50%;
 }
 
-.navlink.depressed a {
-    color: #444;
-}
-/*}*/
-
-.gallery {
-  background: black;
-}
-
-.gallery-cell {
-  /* flex-box, center image in cell */
-  display: -webkit-box;
-  display: -webkit-flex;
-  display:         flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  -webkit-align-items: center;
-          align-items: center;
-}
-
-.gallery-cell img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: center;
-}
-
 
 @media only screen and (max-width: 70rem){
   /* little screen */
-  .eventCard {
+  .header {
+    max-height: 100vh;
+  }
+  .header img{
     width: 100%;
   }
 
@@ -206,13 +200,15 @@ white-space:nowrap;
   .wrapper {
     width: 100%;
   }
+
+  /* hide separators */
+  .navbar img {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 70rem){
   /* medium screen */
-  .eventCard {
-    width: 48%;
-  }
 
   .wrapper {
     width: 100%;
@@ -221,11 +217,105 @@ white-space:nowrap;
 
 @media only screen and (min-width: 100rem){
   /* big screen */
-  .eventCard {
-    width: 30%;
-  }
 
   .wrapper {
     width: 100%;
   }
+}
+
+
+.photo-inner {
+  background: #e6e6e6ff;
+  padding: 0.5rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+.photo-inner > img {
+  width: 100%;
+  object-fit: cover;
+  /*margin-bottom: 0.5rem;*/
+}
+.photo-card img {
+  aspect-ratio: auto;
+}
+.photo-card pre, code {
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+}
+.photo-card pre {
+  white-space: pre-wrap;
+  font-size: 36pt !important;
+}
+
+.card pre {
+  white-space: pre-wrap;
+  font-size: 36pt !important;
+}
+.photo-card ul {
+  text-align: left;
+}
+.card.square img{
+  aspect-ratio: 10/10;
+}
+.card.tall img {
+  aspect-ratio: 10/16;
+}
+.card.wide img {
+  aspect-ratio: 16/10;
+}
+.photo-card.clickable {
+  cursor: pointer;
+}
+.caption {
+  font-weight: bold;
+  font-size: 36pt;
+  text-align: center;
+  line-height: 2rem;
+  /*margin-bottom: -0.3rem;*/
+}
+.photo-card {
+  font-family: 'Thadscript', 'Patrick Hand SC', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+
+  /*min-width: 30rem;
+  width: 45%;*/
+
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  transition: all 0.35s;
+}
+.card {
+  font-family: 'Thadscript', 'Patrick Hand SC', sans-serif;
+  font-size: 16pt;
+  text-decoration: none;
+
+  /*min-width: 30rem;
+  width: 45%;*/
+
+  display: inline-block;
+  margin: 10px;
+  transition: all 0.35s;
+}
+
+
+.card:nth-child(7n+1) {
+  transform: rotate(0.75deg);
+}
+.card:nth-child(7n+2) {
+  transform: rotate(-1.1deg);
+}
+.card:nth-child(7n+3) {
+  transform: rotate(1.3deg);
+}
+.card:nth-child(7n+4) {
+  transform: rotate(1.2deg);
+}
+.card:nth-child(7n+5) {
+  transform: rotate(0.3deg);
+}
+.card:nth-child(7n+6) {
+  transform: rotate(-0.75deg);
+}
+.card:nth-child(7n+0) {
+  transform: rotate(-1deg);
 }

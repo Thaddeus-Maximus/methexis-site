@@ -1,6 +1,6 @@
-baseURL = 'https://blonocatholic.com/'
+baseURL = 'https://methexis.thadhughes.xyz/'
 languageCode = 'en-us'
-title = 'BloNo Young Catholics'
+title = 'Methexis Studio'
 theme = 'blackwork'
 
 publishDir = 'docs'
@@ -22,8 +22,20 @@ buildFuture = true
 
 
 [params]
-  header = "constellation_exp.svg"
+  background = "alder_2_adj.png"
+  header_main = "header.svg"
+  header = "header_wide.svg"
   header_href = "/"
   bar = "bar.svg"
-  navbar_pages = ["calendar", "groups", "about", "resources"]
+
+  navbar_pages = [
+    {name = "Icons", url = ""},
+    {name = "Cards", url = ""},
+    {name = "Furniture", url = ""},
+    {name = "Zines", url = ""}
+  ]
+
+  star = "star_red.png"
+
+
   footer_logo = "logo.png"
