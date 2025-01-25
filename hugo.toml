@@ -1,4 +1,4 @@
-baseURL = 'https://methexis.thadhughes.xyz/'
+baseURL = 'https://methexisstudio.com/'
 languageCode = 'en-us'
 title = 'Methexis Studio'
 theme = 'blackwork'
@@ -36,6 +36,5 @@ buildFuture = true
   ]
 
   star = "star_red.png"
-
 
   footer_logo = "logo.png"
