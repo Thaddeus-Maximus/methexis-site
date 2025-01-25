@@ -1,5 +1,5 @@
 ---
-title: 'Methexis Studios'
+title: 'Methexis Studio'
 date: 2024-01-01T08:00:00-07:00
 draft: false
 layout: single
@@ -32,8 +32,8 @@ Icons are produced on a weekly basis. Please allow a few days for products to sh
 
 ### Custom Orders
 
-Custom orders are entertained - email **[methexisstudios@gmail.com](mailto:methexisstudios@gmail.com)**.
+Custom orders are entertained - email **[methexisstudio@gmail.com](mailto:methexisstudio@gmail.com)**.
 
 ### How to Order?
 
-Order from the **[shop on etsy.com](https://methexisstudios.com)**, or email **[methexisstudios@gmail.com](mailto:methexisstudios@gmail.com)** with what you are looking for.
+Order from the **[shop on etsy.com](https://www.etsy.com/shop/MethexisStudio)**, or email **[methexisstudio@gmail.com](mailto:methexisstudio@gmail.com)** with what you are looking for.
