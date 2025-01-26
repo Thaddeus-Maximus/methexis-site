@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Methexis Studio</title>
-    <link>https://methexis.thadhughes.xyz/</link>
+    <link>https://methexisstudio.com/</link>
     <description>Recent content on Methexis Studio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://methexis.thadhughes.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://methexisstudio.com/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
