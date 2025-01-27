@@ -71,8 +71,6 @@ blockquote {
   margin-right: auto;
   width: 100%;
   text-align: center;
-
-  column-count: 2;
 }
 
 .firstcolumn {
@@ -114,6 +112,8 @@ blockquote {
 .header img{
     width: 1600px;
     max-width: 95%;
+    height: auto;
+    object-fit: contain;
   margin: 0;  padding: 0;
 }
 
@@ -205,6 +205,10 @@ white-space:nowrap;
   .navbar img {
     display: none;
   }
+
+  .singlecolumn {
+    column-count: 1;
+  }
 }
 
 @media only screen and (min-width: 70rem){
@@ -213,6 +217,10 @@ white-space:nowrap;
   .wrapper {
     width: 100%;
   }
+
+  .singlecolumn {
+    column-count: 2;
+  }
 }
 
 @media only screen and (min-width: 100rem){
@@ -220,6 +228,11 @@ white-space:nowrap;
 
   .wrapper {
     width: 100%;
+  }
+
+
+  .singlecolumn {
+    column-count: 2;
   }
 }
 

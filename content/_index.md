@@ -5,14 +5,16 @@ draft: false
 layout: single
 params:
   sidebar:
-  - img: charbel_nicholas.jpg
-    href: ""
-  - img: patrick_block.jpg
-    href: ""
+  - img: therese_liseux_white.jpg
+    href: "https://www.etsy.com/listing/1647115030/wooden-icons-many-designs-available-st?variation0=5060052885&variation1=5063392385"
+  - img: patrick_candlelit.jpg
+    href: "https://www.etsy.com/listing/1647115030/wooden-icons-many-designs-available-st?variation0=5063392419&variation1=5063392385"
+  - img: holy_family_white.jpg
+    href: "https://www.etsy.com/listing/1661283745/round-wooden-icons-holy-family-st?variation0=5089233572&variation1=5089342834"
   - img: end_table.jpg
-    href: ""
-  - img: keytag_ignition_tall.jpg
-    href: ""
+    href: "https://www.etsy.com/listing/1675937242"
+  - img: god_geometer_white.jpg
+    href: "https://www.etsy.com/listing/1647102230"
 ---
 
 
@@ -20,11 +22,11 @@ params:
 
 ### About Thad
 
-Thaddeus Hughes is the illustrator and creator of Methexis Studios. Thaddeus is a revert to the Catholic faith, in large part due to time in the Melkite Catholic Church, where he gained an appreciation for iconography. He's always enjoyed good illustration, especially woodcut / blackwork.
+Thaddeus Hughes is the illustrator and creator of Methexis Studio. Thaddeus spent several years in the Melkite Catholic Church, where he gained an appreciation for iconography. He's always enjoyed good illustration, especially woodcut / blackwork.
 
 ### Materials and Finish
 
-Most icons are alder or maple. Icons are finished with a blend of tung and orange oil. This can be quite fragrant, but it will fade over time. (Some old inventory is finished with a lacquer instead of oil).
+Most icons are alder or maple. Icons are finished with a blend of tung and orange oil. This can be quite fragrant, but it will fade over time. (Note: some old inventory is finished with a lacquer instead of oil).
 
 ### Shipping
 
@@ -32,7 +34,7 @@ Icons are produced on a weekly basis. Please allow a few days for products to sh
 
 ### Custom Orders
 
-Custom orders are entertained - email **[methexisstudio@gmail.com](mailto:methexisstudio@gmail.com)**.
+Please email **[methexisstudio@gmail.com](mailto:methexisstudio@gmail.com)** with what you are asking for - whether this be a design, size, or format not listed.
 
 ### How to Order?
 

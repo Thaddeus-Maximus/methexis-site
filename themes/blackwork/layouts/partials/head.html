@@ -4,6 +4,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Girassol" rel="stylesheet">
 
+{{ with resources.Get "favicon.ico" }}
+  <link rel="icon" type="image/x-icon" href="{{.Permalink}}">
+{{ end }}
+
 <style>
   body {
     {{ with resources.Get $.Site.Params.background }}
