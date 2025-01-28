@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="photo-inner">
+      {{ with resources.Get .Destination }}
+        {{ with .Resize "webp 1000x q60" }}
+          <img src="{{.Permalink}}">
+        {{ end }}
+      {{ end }}
+    </div>
+</div>

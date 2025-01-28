@@ -2,7 +2,7 @@
 title: 'Methexis Studio'
 date: 2024-01-01T08:00:00-07:00
 draft: false
-layout: single
+layout: double
 params:
   sidebar:
   - img: therese_liseux_white.jpg
@@ -32,9 +32,11 @@ Most icons are alder or maple. Icons are finished with a blend of tung and orang
 
 Icons are produced on a weekly basis. Please allow a few days for products to ship.
 
-### Custom Orders
+### Custom Orders & Projects
 
 Please email **[methexisstudio@gmail.com](mailto:methexisstudio@gmail.com)** with what you are asking for - whether this be a design, size, or format not listed.
+
+Need a cabinet for your church? Or outdoor stations of the cross? We do custom work too! [See past projects](custom) and [email us](mailto:methexisstudio@gmail.com).
 
 ### How to Order?
 

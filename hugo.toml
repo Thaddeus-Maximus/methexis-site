@@ -24,14 +24,15 @@ buildFuture = true
 [params]
   background = "alder_2_adj.webp"
   header_main = "header.webp"
-  header = "header_wide.svg"
+  header = "header.webp"
   header_href = "/"
   bar = "bar.svg"
 
   navbar_pages = [
     {name = "Icons", url = "https://www.etsy.com/shop/MethexisStudio/edit?ref=edit_trust_header&section_id=47299015"},
     {name = "Cards", url = "https://www.etsy.com/listing/1647112324/wooden-prayer-cards-sts-charbel-nicholas?variation0=5089212060"},
-    {name = "Furniture", url = "https://www.etsy.com/shop/MethexisStudio/edit?ref=edit_trust_header&section_id=48077728"}
+    {name = "Furniture", url = "https://www.etsy.com/shop/MethexisStudio/edit?ref=edit_trust_header&section_id=48077728"},
+    {name = "Custom Projects", url = "custom"}
   ]
 
   star = "star_red.png"
